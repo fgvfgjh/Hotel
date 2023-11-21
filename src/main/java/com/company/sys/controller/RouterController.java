@@ -13,7 +13,6 @@ public class RouterController {
     @RequestMapping("/")
     public ModelAndView home() {
         ModelAndView modelAndView = new ModelAndView("index");
-        // 你可以在这里添加一些数据到视图中，供HTML页面使用
         modelAndView.addObject("message", "Hello, this is a message from the controller!");
         return modelAndView;
     }
