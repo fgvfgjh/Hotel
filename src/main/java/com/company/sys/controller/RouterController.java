@@ -6,10 +6,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 @RestController
 public class RouterController {
-    @RequestMapping("/hello")
-    public String hello(){
-        return "Hello World";
-    }
     @RequestMapping("/")
     public ModelAndView home() {
         ModelAndView modelAndView = new ModelAndView("index");
